@@ -9,6 +9,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables: 
+  ## Add this under variables section in the pipeline
+  azureSubscription: RR-Digital-OMVS-EHM-DevTest
+  appName: Task1_Function_App
+
 steps:
 - task: NodeTool@0
   inputs:
